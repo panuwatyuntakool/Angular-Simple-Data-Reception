@@ -1,0 +1,26 @@
+<div style="text-align:center">
+  <h1>Form Input</h1>
+  <form>
+    <input type="text" style="width: 30%;height: 30px;font-size: 20px" placeholder="username" #username>
+    <br>
+    <br>
+    <input type="password" style="width: 30%;height: 30px;font-size: 20px" placeholder="password" #password>
+    <br>
+    <br>
+    <input type="email" style="width: 30%;height: 30px;font-size: 20px" placeholder="email" #email>
+    <br>
+    <br>
+    <input type="submit" value=" Click! " style="font-size: 30px" (click)="InputData(username.value , password.value , email.value)">
+  </form>
+
+  <div style="padding-top: 3%">
+    <h1>Data</h1>
+  </div>
+
+  <div style="width: 100%;" >
+    <h2>Username: <span style="color:green">{{username.value}}</span></h2>
+    <h2>Password: <span style="color:red">{{password.value}}</span></h2>
+    <h2>Email: <span style="color:blue">{{email.value}}</span></h2>
+  </div>
+
+</div>
